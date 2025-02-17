@@ -120,6 +120,7 @@ jobs:
     poetry-version: "latest"
 
     # Specify additional packages with plugins for Poetry to install after installing Poetry itself.
+    # Specify a JSON array as string, e.g. "['plugin-1', 'plugin-2', 'plugin-3']".
     poetry-plugins: ""
 ```
 
