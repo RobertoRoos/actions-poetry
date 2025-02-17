@@ -36,6 +36,6 @@ runs:
       run: |
         ALL_PLUGINS=$(echo "${{ inputs.poetry-plugins }}")
         for PLUGIN in $ALL_PLUGINS; do
-          poetry self add $PLUGIN
+          pipx inject poetry $PLUGIN
         done
       shell: bash

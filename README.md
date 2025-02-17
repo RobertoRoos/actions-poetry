@@ -110,6 +110,19 @@ jobs:
         run: poetry run pytest -v
 ```
 
+## Options
+
+```yaml
+- uses: ...
+  with:
+    # Version of Poetry to install (e.g. "v1.8.4"). Use "latest" to get the latest PyPi release, or 
+    # "main" to get the latest commit.
+    poetry-version: "latest"
+
+    # Specify additional packages with plugins for Poetry to install after installing Poetry itself.
+    poetry-plugins: ""
+```
+
 ## License
 
 [MIT License - abatilo/actions-poetry]
